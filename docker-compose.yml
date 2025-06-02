@@ -1,6 +1,21 @@
 version: '3.8'
 
 services:
+  backend:
+    build: .
+    container_name: django_backend
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - redis
+    restart: always
+    environment:
+      - DEBUG=1
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+
   mongodb:
     image: mongo:7.0
     container_name: mongodb
