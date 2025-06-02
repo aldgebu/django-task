@@ -1,0 +1,2 @@
+# django-task
+blog task
