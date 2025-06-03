@@ -196,3 +196,4 @@ cython_debug/
 .idea/
 .venv/
 users/migrations
+blog/migrations
