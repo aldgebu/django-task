@@ -5,7 +5,8 @@ from blog.models.comment import Comment
 class CommentCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ['content', 'blog', 'parent']
+        fields = ['id', 'content', 'blog', 'parent']
+        read_only_fields = ['id']
         
     def create(self, validated_data):
         user = self.context['request'].user
@@ -15,4 +16,5 @@ class CommentCreateSerializer(serializers.ModelSerializer):
 class CommentUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ['content']
+        fields = ['id', 'content']
+        read_only_fields = ['id']
