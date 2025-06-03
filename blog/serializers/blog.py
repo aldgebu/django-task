@@ -14,6 +14,10 @@ class BlogCreateSerializer(serializers.ModelSerializer):
 
 
 class BlogUpdateSerializer(serializers.ModelSerializer):
+    title = serializers.CharField(required=False)
+    description = serializers.CharField(required=False)
+    picture_url = serializers.URLField(required=False, allow_null=True)
+
     class Meta:
         model = Blog
         fields = ['id', 'title', 'picture_url', 'description']
