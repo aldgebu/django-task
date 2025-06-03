@@ -20,6 +20,10 @@ This Django-based REST API provides the following functionalities:
 
         Create Blog Post: POST /api/blogs/create/
 
+        Update Blog: PUT /api/blogs/blogs/<blog_id>/update/
+
+        Delete Blog: DELETE /api/blogs/<blog_id>/delete/
+    
     Comment Management:
 
         Add Comment: POST /api/blogs/comments/create/
