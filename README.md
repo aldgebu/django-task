@@ -2,8 +2,7 @@ Django Blog API
 
 As a Flask developer transitioning into Django, I undertook this project as a 24-hour challenge to familiarize myself with Django's ecosystem. The goal was to implement a functional REST API featuring user authentication, profile management, blogging capabilities, and comments, all containerized using Docker and orchestrated with Docker Compose.
 
-
-
+To ensure a consistent and isolated development environment, I containerized the application using Docker and managed multi-container orchestration with Docker Compose.
 
 This Django-based REST API provides the following functionalities:
 
