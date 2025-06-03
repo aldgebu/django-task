@@ -1,6 +1,30 @@
-This project was developed in 24 hours as part of a coding challenge.
-As a Flask developer building my first Django project, I did my best to write clean and maintainable code using the concepts I understand deeply.
+Django Blog API
 
-My goal was to implement everything thoughtfully and avoid rushing through parts I wasn’t confident in. As a result, the project may not be fully complete, but it reflects my genuine effort and learning process within the limited time.
+As a Flask developer transitioning into Django, I undertook this project as a 24-hour challenge to familiarize myself with Django's ecosystem. The goal was to implement a functional REST API featuring user authentication, profile management, blogging capabilities, and comments, all containerized using Docker and orchestrated with Docker Compose.
 
-Thank you for taking the time to review my work!
+
+
+
+This Django-based REST API provides the following functionalities:
+
+    User Management:
+
+        Register: POST /api/users/register/
+
+        Login: POST /api/users/login/
+
+        Change Password: PUT /api/users/change-password/
+
+        Update Profile: PUT /api/users/update-profile/
+
+    Blog Management:
+
+        Create Blog Post: POST /api/blogs/create/
+
+    Comment Management:
+
+        Add Comment: POST /api/blogs/comments/create/
+
+        Update Comment: PUT /api/blogs/comments/<comment_id>/update/
+
+        Delete Comment: DELETE /api/blogs/comments/<comment_id>/delete/
